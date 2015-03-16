@@ -33,7 +33,7 @@
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Environmental Sampling Day 1 "
+                    android:text="Environmental Sampling Day 2 "
                     android:textAppearance="?android:attr/textAppearanceLarge" >
                 </TextView>
             </LinearLayout>
