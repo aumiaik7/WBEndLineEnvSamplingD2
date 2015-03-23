@@ -691,15 +691,15 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		spinnervalues.add("");
 		spinnervalues.add("1:Yes Eaten");
 		spinnervalues.add("0:No");
-		spinnervalues.add("66:Eaten, don’t know how many days ");
-		spinnervalues.add("99:Don’t know if eaten or not");
+		spinnervalues.add("66:Eaten, donâ€™t know how many days ");
+		spinnervalues.add("99:Donâ€™t know if eaten or not");
 		// spinnervalues.add("77:If others, What type?");
 
 		spinnervalues2.add("");
 		spinnervalues2.add("1:Yes Eaten");
 		spinnervalues2.add("0:No");
-		spinnervalues2.add("66:Eaten, don’t know how many days ");
-		spinnervalues2.add("99:Don’t know if eaten or not");
+		spinnervalues2.add("66:Eaten, donâ€™t know how many days ");
+		spinnervalues2.add("99:Donâ€™t know if eaten or not");
 
 		spinnervalues3.add("");
 		spinnervalues3.add("00:00");
@@ -1608,27 +1608,27 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 	private void setfonttobangla(ViewGroup v) {
 		((CheckBox) findViewById(R.id.chk1))
-				.setText("wkï Lv`¨ †hgb j¨vK‡Uv‡Rb A_ev bvb A_ev ev‡qvwgj,gvBeq Ab¨vb¨?");
+				.setText("wkÃ¯ Lv`Â¨ â€ hgb jÂ¨vKâ€¡Uvâ€¡Rb A_ev bvb A_ev evâ€¡qvwgj,gvBeq AbÂ¨vbÂ¨?");
 		((CheckBox) findViewById(R.id.chk1)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk2))
-				.setText("cvwb‡Z ev `y‡a wm× Kiv km¨ RvZxq Lvevi †hgb: mywR A_ev Ab¨vb¨ Lvevi hv f~Æv&i ˆZix, †h¸‡jv †`vKv‡b wKb‡Z cvIqv hvq?");
+				.setText("cvwbâ€¡Z ev `yâ€¡a wmÃ— Kiv kmÂ¨ RvZxq Lvevi â€ hgb: mywR A_ev AbÂ¨vbÂ¨ Lvevi hv f~Ã†v&i Ë†Zix, â€ hÂ¸â€¡jv â€ `vKvâ€¡b wKbâ€¡Z cvIqv hvq?");
 		((CheckBox) findViewById(R.id.chk2)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk3))
-				.setText("A_ev wkï‡`i Lv`¨ km¨ †hgb †m‡ijvK?");
+				.setText("A_ev wkÃ¯â€¡`i Lv`Â¨ kmÂ¨ â€ hgb â€ mâ€¡ijvK?");
 		((CheckBox) findViewById(R.id.chk3)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk4))
-				.setText("cywóKYv, gwbwg• wgwkªZ Lvevi [¸ov ev gvB‡µvwbDwUª‡qÛ `vbv hv evRv‡i cvIqv hvq]?");
+				.setText("cywÃ³KYv, gwbwgâ€¢ wgwkÂªZ Lvevi [Â¸ov ev gvBâ€¡ÂµvwbDwUÂªâ€¡qÃ› `vbv hv evRvâ€¡i cvIqv hvq]?");
 		((CheckBox) findViewById(R.id.chk4)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk5))
-				.setText("‡mvbvgwb hv Avgv‡`i ‡_‡K †c‡q‡Qb? hw` Iqvk-‡ewbwdU G Aš�?f©~³ nIqvi úi úi nq Zvn‡j “00�?  †KvW Kiæb | hw` wkïwUi eqm 6 gv‡mi †ekx  nq Ges †m Iqvk-‡ewbwdU †_‡K †Kvb LNS bv ‡c‡q _v‡K  Zvn‡j “88�? †KvW Kiæb |");
+				.setText("â€¡mvbvgwb hv Avgvâ€¡`i â€¡_â€¡K â€ câ€¡qâ€¡Qb? hw` Iqvk-â€¡ewbwdU G AÅ¡ï¿½?fÂ©~Â³ nIqvi Ãºi Ãºi nq Zvnâ€¡j â€œ00ï¿½?  â€ KvW KiÃ¦b | hw` wkÃ¯wUi eqm 6 gvâ€¡mi â€ ekx  nq Ges â€ m Iqvk-â€¡ewbwdU â€ _â€¡K â€ Kvb LNS bv â€¡câ€¡q _vâ€¡K  Zvnâ€¡j â€œ88ï¿½? â€ KvW KiÃ¦b |");
 		((CheckBox) findViewById(R.id.chk4)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk6))
-				.setText("Ab¨ ‡h †Kvb (Gj Gb Gm) ev m¤ú~iK cywó/cywó c¨v‡KU?");
+				.setText("AbÂ¨ â€¡h â€ Kvb (Gj Gb Gm) ev mÂ¤Ãº~iK cywÃ³/cywÃ³ cÂ¨vâ€¡KU?");
 		((CheckBox) findViewById(R.id.chk6)).setTypeface(font);
 
 	}
@@ -6660,10 +6660,10 @@ public class ParentActivity extends BaseActivity implements FormListener {
 	private void setfonttobanglamultiple(ViewGroup v) {
 
 		((CheckBox) v.findViewById(R.id.chk1_1))
-				.setText("wLPzox( wLPzox wK wK w`‡q ivbœv n‡q‡Q †R‡b wb‡q dzW MÖc Abyhvqx bx‡P †KvW Kiyb)");
+				.setText("wLPzox( wLPzox wK wK w`â€¡q ivbÅ“v nâ€¡qâ€¡Q â€ Râ€¡b wbâ€¡q dzW MÃ–c Abyhvqx bxâ€¡P â€ KvW Kiyb)");
 		/*
 		 * ((TextView) v.findViewById(R.id.textView3)) .setText(
-		 * "cvwb‡Z ev `y‡a wm× Kiv km¨ RvZxq Lvevi †hgb: mywR,fvZ, iywU, byWzjm,  Ab¨vb¨  km¨ RvZxq `vbv`vi Lv`¨"
+		 * "cvwbâ€¡Z ev `yâ€¡a wmÃ— Kiv kmÂ¨ RvZxq Lvevi â€ hgb: mywR,fvZ, iywU, byWzjm,  AbÂ¨vbÂ¨  kmÂ¨ RvZxq `vbv`vi Lv`Â¨"
 		 * );
 		 */
 
@@ -6672,59 +6672,59 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		((CheckBox) v.findViewById(R.id.chk2_3)).setText("iywU");
 		((CheckBox) v.findViewById(R.id.chk2_4)).setText("byWzjm");
 		((CheckBox) v.findViewById(R.id.chk2_5))
-				.setText("Ab¨vb¨  km¨ RvZxq `vbv`vi Lv`¨");
+				.setText("AbÂ¨vbÂ¨  kmÂ¨ RvZxq `vbv`vi Lv`Â¨");
 
-		((CheckBox) v.findViewById(R.id.chk3_1)).setText("wgwó Kzgov");
+		((CheckBox) v.findViewById(R.id.chk3_1)).setText("wgwÃ³ Kzgov");
 
 		((CheckBox) v.findViewById(R.id.chk3_2)).setText("MvRi");
 
-		((CheckBox) v.findViewById(R.id.chk3_3)).setText("Ab¨vb¨ njy` meRx");
+		((CheckBox) v.findViewById(R.id.chk3_3)).setText("AbÂ¨vbÂ¨ njy` meRx");
 
 		((CheckBox) v.findViewById(R.id.chk4_1)).setText("Avjy");
 
-		((CheckBox) v.findViewById(R.id.chk4_2)).setText("mv`v wgwó Avjy");
+		((CheckBox) v.findViewById(R.id.chk4_2)).setText("mv`v wgwÃ³ Avjy");
 
-		((CheckBox) v.findViewById(R.id.chk5_1)).setText("wgwó Kzgov kvK");
+		((CheckBox) v.findViewById(R.id.chk5_1)).setText("wgwÃ³ Kzgov kvK");
 
 		((CheckBox) v.findViewById(R.id.chk5_2)).setText("mwilv kvK");
 
-		((CheckBox) v.findViewById(R.id.chk5_3)).setText("gUi ïwU kvK");
+		((CheckBox) v.findViewById(R.id.chk5_3)).setText("gUi Ã¯wU kvK");
 
 		((CheckBox) v.findViewById(R.id.chk5_4))
-				.setText("gUi ïwU kvK,  cyBu kvK");
+				.setText("gUi Ã¯wU kvK,  cyBu kvK");
 
 		((CheckBox) v.findViewById(R.id.chk5_5))
-				.setText("Ab¨vb¨ Mvp meyR kvK");
+				.setText("AbÂ¨vbÂ¨ Mvp meyR kvK");
 
 		((CheckBox) v.findViewById(R.id.chk6_1)).setText("cvKv Avg");
 
-		((CheckBox) v.findViewById(R.id.chk6_2)).setText("cvKv †cu‡cu");
+		((CheckBox) v.findViewById(R.id.chk6_2)).setText("cvKv â€ cuâ€¡cu");
 
 		((CheckBox) v.findViewById(R.id.chk7_1)).setText("Kjv");
 
 		((CheckBox) v.findViewById(R.id.chk7_2)).setText("Avbvim");
 
-		((CheckBox) v.findViewById(R.id.chk7_3)).setText("‡cqviv");
+		((CheckBox) v.findViewById(R.id.chk7_3)).setText("â€¡cqviv");
 
-		((CheckBox) v.findViewById(R.id.chk7_4)).setText("Av‡cj");
+		((CheckBox) v.findViewById(R.id.chk7_4)).setText("Avâ€¡cj");
 
-		((CheckBox) v.findViewById(R.id.chk7_5)).setText("Av½yi");
+		((CheckBox) v.findViewById(R.id.chk7_5)).setText("AvÂ½yi");
 
 		((CheckBox) v.findViewById(R.id.chk7_7)).setText("Kgjv");
 
-		((CheckBox) v.findViewById(R.id.chk7_6)).setText("Ab¨vb¨ dj");
+		((CheckBox) v.findViewById(R.id.chk7_6)).setText("AbÂ¨vbÂ¨ dj");
 
-		((CheckBox) v.findViewById(R.id.chk8_1)).setText("U‡g‡Uv");
+		((CheckBox) v.findViewById(R.id.chk8_1)).setText("Uâ€¡gâ€¡Uv");
 
 		((CheckBox) v.findViewById(R.id.chk8_2)).setText("wcuqvR");
 
 		((CheckBox) v.findViewById(R.id.chk8_3)).setText("gvkiyg");
 
-		((CheckBox) v.findViewById(R.id.chk8_4)).setText("‡pom");
+		((CheckBox) v.findViewById(R.id.chk8_4)).setText("â€¡pom");
 
-		((CheckBox) v.findViewById(R.id.chk8_5)).setText("ZvRv mxg/gUi ïwU");
+		((CheckBox) v.findViewById(R.id.chk8_5)).setText("ZvRv mxg/gUi Ã¯wU");
 
-		((CheckBox) v.findViewById(R.id.chk8_6)).setText("Ab¨vb¨ mewR");
+		((CheckBox) v.findViewById(R.id.chk8_6)).setText("AbÂ¨vbÂ¨ mewR");
 
 		((CheckBox) v.findViewById(R.id.chk9_1)).setText(" KwjRv");
 
@@ -6733,17 +6733,17 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		((CheckBox) v.findViewById(R.id.chk9_3)).setText("Heart");
 
 		((CheckBox) v.findViewById(R.id.chk10_1))
-				.setText("†h †Kvb gvsm ,cï cvwLmn");
+				.setText("â€ h â€ Kvb gvsm ,cÃ¯ cvwLmn");
 
 		((CheckBox) v.findViewById(R.id.chk11_1))
-				.setText("†h †Kvb ai‡Yi wWg");
+				.setText("â€ h â€ Kvb aiâ€¡Yi wWg");
 
 		((CheckBox) v.findViewById(R.id.chk12_1)).setText("ZvRv  gvQ");
 
-		((CheckBox) v.findViewById(R.id.chk12_2)).setText("ïUwK gvQ");
+		((CheckBox) v.findViewById(R.id.chk12_2)).setText("Ã¯UwK gvQ");
 
 		((CheckBox) v.findViewById(R.id.chk12_3))
-				.setText("Ab¨vb¨ gvQ / mvgyw`ªK Lvevi");
+				.setText("AbÂ¨vbÂ¨ gvQ / mvgyw`ÂªK Lvevi");
 
 		((CheckBox) v.findViewById(R.id.chk13_1)).setText("mxg");
 
@@ -6753,38 +6753,38 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 		((CheckBox) v.findViewById(R.id.chk13_4)).setText("Pxbvev`vg");
 
-		((CheckBox) v.findViewById(R.id.chk13_5)).setText("†Kki");
+		((CheckBox) v.findViewById(R.id.chk13_5)).setText("â€ Kki");
 
 		((CheckBox) v.findViewById(R.id.chk13_6)).setText("fvix Pxbvev`vg");
 
 		((CheckBox) v.findViewById(R.id.chk13_7))
-				.setText("Ab¨vb¨ †h †Kvb Wvj ev ev`vg RvZxq");
+				.setText("AbÂ¨vbÂ¨ â€ h â€ Kvb Wvj ev ev`vg RvZxq");
 
 		((CheckBox) v.findViewById(R.id.chk14_1)).setText("cwbi");
 
 		((CheckBox) v.findViewById(R.id.chk14_2)).setText("`B");
 
 		((CheckBox) v.findViewById(R.id.chk14_3))
-				.setText("Ab¨vb¨ `ya RvZxq Lv`¨");
+				.setText("AbÂ¨vbÂ¨ `ya RvZxq Lv`Â¨");
 
 		((CheckBox) v.findViewById(R.id.chk15_1))
-				.setText("Dw™¢¾ ‡Zj (WvjWv)");
+				.setText("Dwâ„¢Â¢Â¾ â€¡Zj (WvjWv)");
 
-		((CheckBox) v.findViewById(R.id.chk15_2)).setText("cïi Pwe");
+		((CheckBox) v.findViewById(R.id.chk15_2)).setText("cÃ¯i Pwe");
 
-		((CheckBox) v.findViewById(R.id.chk15_3)).setText("GK ai‡bi gvLb");
+		((CheckBox) v.findViewById(R.id.chk15_3)).setText("GK aiâ€¡bi gvLb");
 
-		((CheckBox) v.findViewById(R.id.chk16_1)).setText("PK‡jU");
+		((CheckBox) v.findViewById(R.id.chk16_1)).setText("PKâ€¡jU");
 
-		((CheckBox) v.findViewById(R.id.chk16_2)).setText("wgwó/ K¨vwÛ");
+		((CheckBox) v.findViewById(R.id.chk16_2)).setText("wgwÃ³/ KÂ¨vwÃ›");
 
 		((CheckBox) v.findViewById(R.id.chk16_3)).setText("wcVv");
 
-		((CheckBox) v.findViewById(R.id.chk16_4)).setText("wgwó we¯‹zU");
+		((CheckBox) v.findViewById(R.id.chk16_4)).setText("wgwÃ³ weÂ¯â€¹zU");
 
 		((CheckBox) v.findViewById(R.id.chk16_5)).setText("wPwb");
 
-		((CheckBox) v.findViewById(R.id.chk17_1)).setText("¯^v` e„w× KviK");
+		((CheckBox) v.findViewById(R.id.chk17_1)).setText("Â¯^v` eâ€žwÃ— KviK");
 
 		((CheckBox) v.findViewById(R.id.chk17_2)).setText("imyb");
 
@@ -6796,7 +6796,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		((CheckBox) v.findViewById(R.id.chk18_2)).setText("KvKov");
 
 		((TextView) v.findViewById(R.id.textView2))
-				.setText("hw` Lv`¨ ZvwjKvq bv _v‡K Zvn‡j wb‡P Lvev‡ii bvg wjLyb|");
+				.setText("hw` Lv`Â¨ ZvwjKvq bv _vâ€¡K Zvnâ€¡j wbâ€¡P Lvevâ€¡ii bvg wjLyb|");
 
 		((TextView) v.findViewById(R.id.textView2)).setTypeface(font);
 		((CheckBox) v.findViewById(R.id.chk1_1)).setTypeface(font);
@@ -7591,7 +7591,30 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		// TODO Auto-generated method stub
 		qqq = (TextView) v.findViewById(R.id.qqq);
 
-		if (CommonStaticClass.langBng) {
+		//code by imtiaz khan
+				if(CommonStaticClass.questionMap.
+						get(CommonStaticClass.currentSLNo).getQvar().equalsIgnoreCase("m213"))
+				{
+					
+					String PID = "";
+					String textBang = "দয়া করে হুইলপ্যাকে এই ক্রমানুসারে লেবেল বসান";
+					String textEng = "PROMPT: Please label the whirlpak with the following label:";
+					PID = "T."+CommonStaticClass.dataId;
+				
+					
+					
+						
+						if(CommonStaticClass.langBng)			
+							qqq.setText(textBang+
+							"\n\n"+ PID+"."+findDay()+"."+getChoiceValue("q11_3"));
+						else 
+							qqq.setText(textEng+
+									"\n\n"+ PID+"."+findDay()+"."+getChoiceValue("q11_3"));
+						
+					
+					
+				}
+				else if (CommonStaticClass.langBng) {
 			if (CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0) {
 				Typeface font = Typeface.createFromAsset(getAssets(),
@@ -7961,7 +7984,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			 * if(checkButton.getText().toString
 			 * ().toLowerCase().contains("other") ||
 			 * checkButton.getText().toString
-			 * ().toLowerCase().contains("Ab¨vb¨")) {
+			 * ().toLowerCase().contains("AbÂ¨vbÂ¨")) {
 			 * et.setInputType(InputType.TYPE_CLASS_TEXT); }
 			 * 
 			 * else
@@ -7977,7 +8000,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			 * if (checkButton.getText().toString().trim().toLowerCase()
 			 * .contains("others") ||
 			 * checkButton.getText().toString().trim().toLowerCase()
-			 * .contains("Ab¨vb¨: wjLyb")) { ln.removeView(et);
+			 * .contains("AbÂ¨vbÂ¨: wjLyb")) { ln.removeView(et);
 			 * et.setVisibility(View.GONE); }
 			 */
 
@@ -8037,7 +8060,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 								 * if (checkButton.getText().toString()
 								 * .toLowerCase().contains("others") ||
 								 * checkButton .getText().toString().trim(
-								 * ).toLowerCase() .contains("Ab¨vb¨: wjLyb"))
+								 * ).toLowerCase() .contains("AbÂ¨vbÂ¨: wjLyb"))
 								 * {
 								 * 
 								 * 
@@ -10103,9 +10126,9 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				((RadioButton) findViewById(R.id.radio1)).setTypeface(font);
 				((RadioButton) findViewById(R.id.radio2)).setTypeface(font);
 				((RadioButton) findViewById(R.id.radio1))
-						.setText("	Ab¨vb¨ (wbw`©ó K‡i wjLyb)");
+						.setText("	AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kâ€¡i wjLyb)");
 				((RadioButton) findViewById(R.id.radio2))
-						.setText("g‡b Ki‡Z cv‡i bv");
+						.setText("gâ€¡b Kiâ€¡Z cvâ€¡i bv");
 			}
 		}
 
@@ -11072,27 +11095,27 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							CommonStaticClass.currentSLNo).getQdesceng());
 			if (qName.equalsIgnoreCase("q401")
 					|| qName.equalsIgnoreCase("q402")) {
-				num1.setText("wbw`©ó Lvbv ");
-				num2.setText("Ab¨vb¨ Lvbv ");
+				num1.setText("wbw`Â©Ã³ Lvbv ");
+				num2.setText("AbÂ¨vbÂ¨ Lvbv ");
 			} else if (qName.equalsIgnoreCase("q310")) {
-				num1.setText("cÖwZw`b Lvevi cvwb msMÖn Kivi msL¨v ");
-				num2.setText("cÖwZw`b GKzqvU¨ve e¨envi Kivi msL¨v ");
+				num1.setText("cÃ–wZw`b Lvevi cvwb msMÃ–n Kivi msLÂ¨v ");
+				num2.setText("cÃ–wZw`b GKzqvUÂ¨ve eÂ¨envi Kivi msLÂ¨v ");
 			} else if (qName.equalsIgnoreCase("q621")
 					|| qName.equalsIgnoreCase("q622")) {
-				num1.setText("wbw`©ó Lvbv");
-				num2.setText("Ab¨vb¨ Lvbv ");
+				num1.setText("wbw`Â©Ã³ Lvbv");
+				num2.setText("AbÂ¨vbÂ¨ Lvbv ");
 			} else if (qName.equalsIgnoreCase("q615")) {
-				num1.setText("cÖwZw`b Lvevi cvwb msMÖn Kivi msL¨v ");
-				num2.setText("cÖwZw`b GKzqvU¨ve e¨envi Kivi msL¨v ");
+				num1.setText("cÃ–wZw`b Lvevi cvwb msMÃ–n Kivi msLÂ¨v ");
+				num2.setText("cÃ–wZw`b GKzqvUÂ¨ve eÂ¨envi Kivi msLÂ¨v ");
 			}
 			if (qName.equalsIgnoreCase("q1_12_1")
 					|| qName.equalsIgnoreCase("q1_12_2")) {
-				num1.setText("QvÎ");
-				num2.setText("QvÎx");
+				num1.setText("QvÃŽ");
+				num2.setText("QvÃŽx");
 			}
 			if (qName.equalsIgnoreCase("q1_12_3")) {
-				num1.setText("wk¶K");
-				num2.setText("wkw¶Kv");
+				num1.setText("wkÂ¶K");
+				num2.setText("wkwÂ¶Kv");
 			}
 
 		} else {
@@ -13412,11 +13435,11 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				hourText.setTypeface(font);
 				minText.setTypeface(font);
 
-				weekText.setText("mßvn");
+				weekText.setText("mÃŸvn");
 				yearText.setText("eQi");
 				monthText.setText("gvm");
 				dayText.setText("w`b");
-				hourText.setText("N�Uv");
+				hourText.setText("N›Uv");
 				minText.setText("wgwbU ");
 			}
 			;
@@ -14093,7 +14116,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						.setText("RevB Kiv");
 				((TextView) v.findViewById(R.id.txtcustom2)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom3))
-						.setText("c«wµqvRvZKib");
+						.setText("cÂ«wÂµqvRvZKib");
 				((TextView) v.findViewById(R.id.txtcustom3)).setTypeface(font);
 			} else {
 				((TextView) v.findViewById(R.id.txtcustom1))
@@ -16181,16 +16204,16 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			tvc5_4.setTypeface(font);
 			lblc6.setTypeface(font);
 
-			Slno.setText("µwgK bs");
-			lblc2.setText("åg‡bi D‡�?k¨,(1=mvgvwRK cwi`k©b,2=‡ivMxi ïk«ylvKvix wn‡m‡e,3=  Ab¨vb¨ (wbw`©ó Kiæb)");
-			lblc3.setText("Avcbvi Lvbv‡Z AwZevwnZ mgq (N›Uvq D‡jøL Kiæb hw` AwZevwnZ mgq 3 iv‡Zi Kg  nq)");
-			lblc4.setText("Avcbvi Lvbv‡Z AwZevwnZ iv‡Zi msL¨v (hw` AwZevwnZ mgq 3 iv‡Zi †ekx  nq)");
-			lblc5.setText("‡Kv_v n‡Z wZwb/Zviv G‡mwQ‡jb?");
-			lblc5village.setText("MÖvg/cvov (gnjøv)");
+			Slno.setText("ÂµwgK bs");
+			lblc2.setText("Ã¥gâ€¡bi Dâ€¡ï¿½?kÂ¨,(1=mvgvwRK cwi`kÂ©b,2=â€¡ivMxi Ã¯kÂ«ylvKvix wnâ€¡mâ€¡e,3=  AbÂ¨vbÂ¨ (wbw`Â©Ã³ KiÃ¦b)");
+			lblc3.setText("Avcbvi Lvbvâ€¡Z AwZevwnZ mgq (Nâ€ºUvq Dâ€¡jÃ¸L KiÃ¦b hw` AwZevwnZ mgq 3 ivâ€¡Zi Kg  nq)");
+			lblc4.setText("Avcbvi Lvbvâ€¡Z AwZevwnZ ivâ€¡Zi msLÂ¨v (hw` AwZevwnZ mgq 3 ivâ€¡Zi â€ ekx  nq)");
+			lblc5.setText("â€¡Kv_v nâ€¡Z wZwb/Zviv Gâ€¡mwQâ€¡jb?");
+			lblc5village.setText("MÃ–vg/cvov (gnjÃ¸v)");
 			lblc5_2.setText("BDwbqb");
-			lblc5_3.setText("Dc‡Rjv");
-			tvc5_4.setText("‡Rjv");
-			lblc6.setText("`~iZ¡ wKtwgt/gvBj (DËi`vZvi D‡jjLK„Z GKK wbw`©ó Kiæb)");
+			lblc5_3.setText("Dcâ€¡Rjv");
+			tvc5_4.setText("â€¡Rjv");
+			lblc6.setText("`~iZÂ¡ wKtwgt/gvBj (DÃ‹i`vZvi Dâ€¡jjLKâ€žZ GKK wbw`Â©Ã³ KiÃ¦b)");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -16491,6 +16514,46 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		});
 
 	}
+	//code by imtiaz khan
+		public String findDay()
+		{
+			String day= "";
+			
+			String sql1 = "";
+			int choiceValue = 0;
+			sql1 = "Select q11_2 from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";	
+			//sql1 = "Select q5_1,q5_2,q5_3,q5_4,q5_5,q5_6 from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";
+
+			Cursor mCursor1 = null;
+			
+			
+			try {
+				mCursor1 = dbHelper.getQueryCursor(sql1);
+
+				if (mCursor1 != null && mCursor1.getCount() > 0) {
+					
+						mCursor1.moveToFirst();
+						
+						
+						String[] parts = mCursor1.getString(mCursor1.getColumnIndex("q11_2")).split(" ");
+							
+								
+						day = parts[0];	
+							
+					
+						
+					}	
+				} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			} finally {
+				if (mCursor1 != null)
+					mCursor1.close();
+				
+			}
+			
+			return day;
+		}
 	// code by imtiaz khan
 	public int getChoiceValue(String quesName)
 	{
