@@ -2701,6 +2701,11 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 	private void updateTableDataFrmComboBox() {
 		// TODO Auto-generated method stub
+		if(sResCode.equalsIgnoreCase(""))
+		{
+			CommonStaticClass.showMyAlert(con, "Alert", "Must selecet an item in order to proceed");
+			return;
+		}
 		try {
 			String sql = "";
 			if ((CommonStaticClass.questionMap
@@ -7230,9 +7235,9 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				// TODO Auto-generated method stub
 				// updateTableData();
 
-				if (((EditText) vg.findViewById(R.id.txtid)).length() == 0) {
+				if (((EditText) vg.findViewById(R.id.txtid)).length() != 5) {
 					CommonStaticClass.showMyAlert(con, "Message",
-							"Please fill all fields correctly");
+							"Id must be of 5 digits");
 					return;
 				}
 				/*
@@ -7254,48 +7259,65 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 				CommonStaticClass.dataId = ((EditText) vg
 						.findViewById(R.id.txtid)).getText().toString();
+				String first3 = Character.toString(CommonStaticClass.dataId.charAt(0)) + Character.toString(CommonStaticClass.dataId.charAt(1))
+								+ Character.toString(CommonStaticClass.dataId.charAt(2));
+				String last2 = Character.toString(CommonStaticClass.dataId.charAt(3)) + Character.toString(CommonStaticClass.dataId.charAt(4));
+				
+				int first3Int = Integer.parseInt(first3);
+				int last2Int = Integer.parseInt(last2);
+				
 				if (CommonStaticClass.dataId.length() > 0) {
-					progressDialog = ProgressDialog.show(con, "Wait",
-							"Please wait while processing next question");
-
-					new Thread() {
-
-						public void run() {
-							try {
-								Looper.prepare();
-								if (FileRead()) {
-
-									if (CommonStaticClass.userSpecificId
-											.length() == 0
-											|| CommonStaticClass.AssetID
-													.length() == 0) {
-
-										return;
+					if((first3Int >=1 && first3Int <= 720) && (last2Int >=1 && last2Int <= 8))
+					{
+						progressDialog = ProgressDialog.show(con, "Wait",
+								"Please wait while processing next question");
+	
+						new Thread() {
+	
+							public void run() {
+								try {
+									Looper.prepare();
+									if (FileRead()) {
+	
+										if (CommonStaticClass.userSpecificId
+												.length() == 0
+												|| CommonStaticClass.AssetID
+														.length() == 0) {
+	
+											return;
+										}
+										//
+										updateTableDataFrmHHID(vg);
+										// preserveState();
+										Message msg = new Message();
+										msg.what = UPDATEDONE;
+										handlerFrmHHID.sendMessage(msg);
+									} else {
+										progressDialog.dismiss();
+										CommonStaticClass.showFinalAlert(con,
+												"Ensure your Asset ID");
+	
 									}
-									//
-									updateTableDataFrmHHID(vg);
-									// preserveState();
-									Message msg = new Message();
-									msg.what = UPDATEDONE;
-									handlerFrmHHID.sendMessage(msg);
-								} else {
+								} catch (Exception lg) {
 									progressDialog.dismiss();
 									CommonStaticClass.showFinalAlert(con,
 											"Ensure your Asset ID");
-
+	
+								} finally {
+									progressDialog.dismiss();
 								}
-							} catch (Exception lg) {
-								progressDialog.dismiss();
-								CommonStaticClass.showFinalAlert(con,
-										"Ensure your Asset ID");
-
-							} finally {
-								progressDialog.dismiss();
+								Looper.loop();
 							}
-							Looper.loop();
-						}
-
-					}.start();
+	
+						}.start();
+					}
+					else
+					{
+						CommonStaticClass.showMyAlert(con, "Alert", "First 3 digits should be within 001-720 and last 2 digits should be within 01-08");
+						return;
+					}
+					
+						
 				} else {
 					CommonStaticClass
 							.showFinalAlert(con,
@@ -8949,9 +8971,21 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 	private void updateTableDataFrmMultipleChoice() {
 
+		int totalCheck = 0;
 		if (checkIfSingleOptionIsCheckedFrmMultipleChoice())
 
 		{
+			//code by imtiaz khan
+			if (qName.equalsIgnoreCase("q2_16")
+					&& (aaa.get(0) == 1 && (aaa.get(1) == 1 
+					|| aaa.get(2) == 1 || aaa.get(3) == 1))) {
+				
+				CommonStaticClass.showMyAlert(con, "Alert", "If no. 4 is selected other options can not be selected");
+				return;
+				
+			}
+			
+			
 
 			Iterator it = edList.entrySet().iterator();
 			while (it.hasNext()) {
@@ -8961,6 +8995,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					if (pairs.getValue().getText().toString().length() > 0) {
 						String sq = "";
 						if (!CommonStaticClass.isMember)
+						{
 							sq = "UPDATE "
 									+ CommonStaticClass.questionMap.get(
 											CommonStaticClass.currentSLNo)
@@ -8969,6 +9004,18 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									+ pairs.getValue().getText().toString()
 									+ "' where dataid='"
 									+ CommonStaticClass.dataId + "'";
+							if(qName.equalsIgnoreCase("q3_7") || qName.equalsIgnoreCase("q3_14") )
+							{
+								try
+								{
+									totalCheck += Integer.parseInt(pairs.getValue().getText().toString());
+								}
+								catch(NumberFormatException e)
+								{
+									
+								}
+							}
+						}
 						else
 							sq = "UPDATE "
 									+ CommonStaticClass.questionMap.get(
@@ -8988,6 +9035,25 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					 * return; }
 					 */
 				}
+			}
+			//code by imtiaz khan
+			if(qName.equalsIgnoreCase("q3_7"))
+			{
+				if( getChoiceValue("q3_6") != totalCheck)
+				{
+					CommonStaticClass.showMyAlert(con, "Alert", "Check value of question 3.6 and total values of 3.7. They must match");
+					return;
+				}
+					
+			}
+			else if(qName.equalsIgnoreCase("q3_14"))
+			{
+				if( getChoiceValue("q3_13") != totalCheck)
+				{
+					CommonStaticClass.showMyAlert(con, "Alert", "Check value of question 3.13 and total values of 3.14. They must match");
+					return;
+				}
+					
 			}
 
 			String sql = "UPDATE "
@@ -9042,6 +9108,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									CommonStaticClass.currentSLNo).getQvar(),
 							CommonStaticClass.questionMap.get(
 									CommonStaticClass.currentSLNo).getQnext1());*/
+				
 				//code by imtiaz khan
 				if (qName.equalsIgnoreCase("q2_16")
 						&& op.qidList.get(0).equalsIgnoreCase("q2_16_4") && aaa.get(0) == 1) {
@@ -10449,7 +10516,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			public void afterTextChanged(Editable s) {
 
-				if (qName.equalsIgnoreCase("q3_3")) {
+				if (qName.equalsIgnoreCase("q2_15")) {
 					String lineNumber = s.toString();
 					if (lineNumber.length() > 5) {
 						CommonStaticClass.showMyAlert(con, "Message",
