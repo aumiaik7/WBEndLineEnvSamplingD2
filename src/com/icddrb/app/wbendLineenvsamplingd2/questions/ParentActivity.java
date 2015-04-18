@@ -8694,6 +8694,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				edbox.setId(i);
 				
 				//only for this project by imtiaz khan
+				if(!qName.equalsIgnoreCase("q2_10"))
 				edbox.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
 				edList.put(i, edbox);
 				layoutParamForcheck.weight = 1;
@@ -8976,7 +8977,14 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 		{
 			//code by imtiaz khan
-			if (qName.equalsIgnoreCase("q2_16")
+			
+			if (qName.equalsIgnoreCase("q2_16") &&  aaa.get(2) == 1 && aaa.get(3) == 1)
+			{
+				CommonStaticClass.showMyAlert(con, "ALERT",
+						"Yes and No canot be checked together");
+				return;
+			}
+		    else if ((qName.equalsIgnoreCase("q2_16") || qName.equalsIgnoreCase("q2_12"))
 					&& (aaa.get(0) == 1 && (aaa.get(1) == 1 
 					|| aaa.get(2) == 1 || aaa.get(3) == 1))) {
 				
