@@ -2494,7 +2494,30 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					mCursor.close();
 			}
 
-		} else // applicable when Spinner is loaded from options table
+		} 
+		//code by imtiaz khan
+		else if(CommonStaticClass.questionMap
+				.get(CommonStaticClass.currentSLNo).getQvar()
+				.equalsIgnoreCase("q11_2"))
+		{
+			users = new ArrayList<String>();
+			users.add("");
+			userIDs = new ArrayList<String>();
+			userIDs.add("");
+			for(int i = 1 ; i<= 31; i++)
+			{
+				users.add(i+"");
+				userIDs.add(i+"");
+			}
+			
+			adapterForCombo = new ArrayAdapter(this,
+					android.R.layout.simple_spinner_item, users);
+			adapterForCombo
+					.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+			// adapterForCombo.setDropDownViewResource(R.layout.checkedspintextview);
+			spinner.setAdapter(adapterForCombo);
+		}
+		else // applicable when Spinner is loaded from options table
 		{
 			op = CommonStaticClass.findOptionsForThisQuestion(
 					dbHelper,
@@ -2555,6 +2578,15 @@ public class ParentActivity extends BaseActivity implements FormListener {
 										0,
 										(parent.getItemAtPosition(pos)
 												.toString().lastIndexOf(":") - 1));
+					
+					else if(CommonStaticClass.questionMap
+							.get(CommonStaticClass.currentSLNo)
+							.getQvar().equalsIgnoreCase("q11_2") )
+					{
+						sResCode = parent
+								.getItemAtPosition(pos)
+								.toString();
+					}
 					else
 						sResCode = op.codeList.get(pos).toString();
 				} else {
@@ -2611,6 +2643,9 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									|| CommonStaticClass.questionMap
 											.get(CommonStaticClass.currentSLNo)
 											.getQvar().equalsIgnoreCase("q11_1")
+									|| CommonStaticClass.questionMap
+										.get(CommonStaticClass.currentSLNo)
+										.getQvar().equalsIgnoreCase("q11_2")
 
 									|| CommonStaticClass.questionMap
 											.get(CommonStaticClass.currentSLNo)
@@ -7628,10 +7663,10 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						
 						if(CommonStaticClass.langBng)			
 							qqq.setText(textBang+
-							"\n\n"+ PID+"."+findDay()+"."+getChoiceValue("q11_3"));
+							"\n\n"+ PID+"."+getChoiceValue("q11_2")+"."+getChoiceValue("q11_3"));
 						else 
 							qqq.setText(textEng+
-									"\n\n"+ PID+"."+findDay()+"."+getChoiceValue("q11_3"));
+									"\n\n"+ PID+"."+getChoiceValue("q11_2")+"."+getChoiceValue("q11_3"));
 						
 					
 					
@@ -16589,46 +16624,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		});
 
 	}
-	//code by imtiaz khan
-		public String findDay()
-		{
-			String day= "";
-			
-			String sql1 = "";
-			int choiceValue = 0;
-			sql1 = "Select q11_2 from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";	
-			//sql1 = "Select q5_1,q5_2,q5_3,q5_4,q5_5,q5_6 from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";
-
-			Cursor mCursor1 = null;
-			
-			
-			try {
-				mCursor1 = dbHelper.getQueryCursor(sql1);
-
-				if (mCursor1 != null && mCursor1.getCount() > 0) {
-					
-						mCursor1.moveToFirst();
-						
-						
-						String[] parts = mCursor1.getString(mCursor1.getColumnIndex("q11_2")).split(" ");
-							
-								
-						day = parts[0];	
-							
-					
-						
-					}	
-				} catch (Exception e) {
-				// TODO: handle exception
-				e.printStackTrace();
-			} finally {
-				if (mCursor1 != null)
-					mCursor1.close();
-				
-			}
-			
-			return day;
-		}
+	
 	// code by imtiaz khan
 	public int getChoiceValue(String quesName)
 	{
