@@ -7652,7 +7652,9 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				if(CommonStaticClass.questionMap.
 						get(CommonStaticClass.currentSLNo).getQvar().equalsIgnoreCase("m213"))
 				{
-					
+					Typeface font = Typeface.createFromAsset(getAssets(),
+							"SolaimanLipi.ttf");
+					qqq.setTypeface(font);
 					String PID = "";
 					String textBang = "দয়া করে হুইলপ্যাকে এই ক্রমানুসারে লেবেল বসান";
 					String textEng = "PROMPT: Please label the whirlpak with the following label:";
@@ -9164,7 +9166,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					
 				}
-				else if (qName.equalsIgnoreCase("q3_7")
+				/*else if (qName.equalsIgnoreCase("q3_7")
 						&& op.qidList.get(1).equalsIgnoreCase("q3_7_77") && aaa.get(1) == 1) {
 					
 						CommonStaticClass.findOutNextSLNo(
@@ -9179,7 +9181,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 								qName,"q3_14Other");
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					
-				}
+				}*/
 				else {
 					CommonStaticClass.findOutNextSLNo(
 							qName,
